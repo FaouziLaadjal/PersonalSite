@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="imgs/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Mes Projets</title>
+  </head>
+  <body>
+    <!----Header ------->
+    <header>
+      <nav>
+        <button class="nav-btn" id="navbtn"></button>
+        <ul class="navlinks" id="navbarlinks">
+          <li><a href="index.html#Monparcours">Mon parcours</a></li>
+          <li><a href="index.html#Mescompetences">Mes compétences</a></li>
+          <li><a href="index.html#Mesprojets">Mes projets</a></li>
+          <li><a href="index.html#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--------Introduction du factory IO------>
+    <div class="container">
+      <div class="presentation">
+        <h1>Introduction</h1>
+        <h2>Factory I/O</h2>
+        <p>
+          <strong>Factory I/O: </strong>est un logiciel de simulation 3D
+          permettant de concevoir et de simuler des systèmes industriels
+          complets. Développé dans le même esprit que les jeux vidéos
+          actuels,Factory I/O offre un haut degré de réalisme pendant les phases
+          de conception et de simulation.Le logiciel peut s’interfacer avec des
+          automates réels permettant d’effectuer le pilotage depuis l’extérieur.
+          Factory I/O prend en charge les différents automates du commerce :
+          Siemens,Schneider,Rocwell etc..,il permet l’apprentissage ludique et
+          progressive de l’automatisme industriel.
+        </p>
+        <h3>Objectif:</h3>
+        <p>Concevez, programmez et simulez des systèmes industriels complets</p>
+      </div>
+    </div>
+    <!-----Mes projets------>
+    <div class="container">
+      <div class="presentation">
+        <h1>Mes Projets</h1>
+        <!---------Projet 1---->
+        <div class="projet">
+          <div class="project-title">
+            <h2 id="sorting-station">Sorting Station</h2>
+          </div>
+          <div class="project-discription">
+            <h3>Objectif:</h3>
+            <p>
+              L'objectif de ce projet est de trier 3 types de caisses, Chaque
+              type possède deux couleurs différentes (Bleu et vert) À l'aide
+              d'un VISION SENSOR (Capteur de vision) qui donne en sortie Des
+              valeurs en entier allant de 1 à 6 Pour les différentes boîtes.
+            </p>
+            <div class="sorting-table-div">            <table class="sorting-table">
+                <thead>
+                  <tr>
+                    <td>Type de Carton</td>
+                    <td>Valeur Du Vision Sensor</td>
+                    <td>Image</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Type 1</td>
+                    <td>1-4</td>
+                    <td>
+                      <img class="img" src="imgs/projects-imgs/1.png" alt="" />
+                      <img class="img" src="imgs/projects-imgs/11.png" alt="" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Type 2</td>
+                    <td>2-5</td>
+                    <td>
+                      <img class="img" src="imgs/projects-imgs/2.png" alt="" />
+                      <img class="img" src="imgs/projects-imgs/22.png" alt="" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Type 3</td>
+                    <td>3-6</td>
+                    <td>
+                      <img class="img" src="imgs/projects-imgs/3.png" alt="" />
+                      <img class="img" src="imgs/projects-imgs/33.png" alt="" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+  </div>
+          </div>
+          <div class="project-video">
+              <h2>Programmation- TIA Portal</h2>
+            <iframe
+              class="vid"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/RK-oy9lBnqY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <!-----Projet 2------>
+        <div class="projet">
+          <div class="project-title">
+            <h2 id="Separting-station">Separating station</h2>
+          </div>
+          <div class="project-description">
+            <p><h3>Objectif :</h3> L'objectif de ce projet et de séparer un objet de deux couleurs dans différents convoyeurs.
+                Le Vision Sensor detecte les cartons vert avec une valeur de 4 et les cartons bleu avec une valeur de 1. <br>
+                A l'aide du Vision Sensor on fait en sorte que les cartons vert passe seulement dans le convoyeur 1 , et les cartons bleu passe seulement dans le convoyeur 2. <br>
+                <h3>On a 4 cas possible :</h3>
+                </p>
+                <div class="grid-test">
+                    <div class="box1" ><h4>1er cas :</h4> <p>c'est le cas ou les cartons vert doivent changer de chemin et passer au convoyeur 2</p>
+                        <img class="cases" src="imgs/projects-imgs/cas 1.png" alt="">
+                    </div>
+                    <div class="box2" ><h3>2eme cas:</h3> <p>c'est le cas ou les cartons Bleu doivent changer de chemin et passer au convoyeur 1</p>
+                        <img class="cases" src="imgs/projects-imgs/cas 2.png" alt="">
+                    </div>
+                    <div class="box3" ><h3>3eme cas:</h3> <p>c'est le cas ou les cartons vert doivent changer de chemin et passer au convoyeur 2 et les cartons Bleu doivent changer de chemin et passer au convoyeur 1</p>
+                        <img class="cases" src="imgs/projects-imgs/case 3.png" alt="">
+                    </div>
+                    <div class="box4" ><h3>4eme cas:</h3> <p>c'est le cas normal ou les cartons vert passe dans le convoyeur 2  et les cartons bleu dans le convoyeur 1</p>
+                        <img class="cases" src="imgs/projects-imgs/case 4.png" alt="">
+                    </div>
+              </div>
+            </div>
+    
+          <div class="project-video"><h2>Programmation- TIA Portal</h2>
+            <iframe class="vid" width="560" height="315" src="https://www.youtube.com/embed/898WkaoHtR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+            
+
+      
+        </div>
+      </div>
+    </div>
+        <!-----Foooter------>
+        <footer>
+          <a href="https://www.facebook.com/fou.zii.92">My Facebook</a>
+          <a href="https://www.instagram.com/fouu_zii/?hl=fr">My Instagram</a>
+          <a href="https://www.linkedin.com/in/faouzi-laadjal-26958a222/"
+            >My Linkedin</a
+          >
+          <p class="copyrights">© 2021 | Laadjal Faouzi |</p>
+        </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,418 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.container-wrapper {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #163174;
+}
+h2 {
+  color: #163174;
+  padding-bottom: 10px;
+}
+h3 {
+  color: #163174;
+}
+p {
+  padding-bottom: 10px;
+}
+.nav-btn {
+  display: none;
+}
+
+header {
+  background-color: #2e4561;
+  position: fixed;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navlinks {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 30px;
+  justify-content: center;
+}
+.navlinks li {
+  list-style: none;
+}
+.navlinks li a {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.navlinks li a:hover {
+  color: #2e4561;
+  background-color: white;
+}
+.intro {
+  background: url(imgs/intro-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+.intro h1 {
+  font-size: 4rem;
+  padding-top: 250px;
+  color: white;
+}
+.intro h3 {
+  text-align: center;
+  color: white;
+}
+.welcome {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  gap: 30px;
+}
+.face-img-div {
+  text-align: center;
+}
+.face-img {
+  width: 200px;
+}
+
+.welcome a {
+  text-decoration: none;
+  color: #4f7280;
+}
+#Monparcours {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 30px;
+  justify-content: center;
+}
+#Monparcours .title {
+  text-align: center;
+  color: #2e4561;
+}
+.formation-table {
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+.formation-table thead tr {
+  background-color: #163174;
+  color: white;
+}
+.formation-table th {
+  text-align: left;
+  padding: 10px 10px;
+}
+.formation-table td {
+  border: 1px solid #08112a;
+  padding: 10px 10px;
+}
+.card-img {
+  width: 100px;
+}
+#Mescompetences {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.row1 h2 {
+  color: #2e4561;
+  text-align: center;
+  padding-bottom: 50px;
+  font-weight: bold;
+}
+.row2 {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 30px;
+}
+.card {
+  display: grid;
+  grid-template-columns: 150px auto;
+}
+.column2 {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+.column2 h2 {
+  color: #2e4561;
+  font-weight: bold;
+}
+.MCT {
+  text-align: center;
+}
+
+.MCT ul {
+  padding-left: 500px;
+  padding-right: 500px;
+}
+
+.MCT li {
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+#Contact {
+  text-align: center;
+}
+
+.myButton {
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color: #7892c2;
+  border-radius: 42px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color: #476e9e;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+footer {
+  text-align: center;
+  background-color: #08112a;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: white;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+.presentation {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+}
+.sorting-table {
+  border-collapse: collapse;
+  font-size: 1rem;
+  min-width: 400px;
+}
+.sorting-table thead tr {
+  background-color: #163174;
+  color: white;
+}
+.sorting-table th {
+  text-align: left;
+  padding: 10px 10px;
+}
+.sorting-table td {
+  text-align: center;
+  border: 1px solid #08112a;
+  padding: 10px 10px;
+}
+.cases {
+  width: 100%;
+}
+iframe {
+  margin-bottom: 100px;
+  width: 100%;
+  height: 500px;
+}
+.projet {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 30px;
+}
+.sorting-table-div {
+  padding-top: 50px;
+  padding-left: 250px;
+}
+#Mesprojets {
+  text-align: center;
+}
+#Mesprojets h3 {
+  color: black;
+}
+.front-btn {
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color: #7892c2;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.front-btn:hover {
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color: #476e9e;
+}
+.front-btn:active {
+  position: relative;
+  top: 1px;
+}
+.sorting-btn {
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color: #7892c2;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 10px 25px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.sorting-btn:hover {
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color: #476e9e;
+}
+.sorting-btn:active {
+  position: relative;
+  top: 1px;
+}
+.separting-btn {
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color: #7892c2;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 10px 10px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.separting-btn:hover {
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color: #476e9e;
+}
+.separting-btn:active {
+  position: relative;
+  top: 1px;
+}
+.insure-btn {
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color: #7892c2;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 10px 65px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.insure-btn:hover {
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color: #476e9e;
+}
+.insure-btn:active {
+  position: relative;
+  top: 1px;
+}
+@media screen and (max-width: 830px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    padding-bottom: 30px;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #Mescompetences {
+    padding: 0;
+  }
+  .MCT ul {
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+  .intro h1 {
+    font-size: 3rem;
+  }
+  #intro-back {
+    padding: 0;
+  }
+  .navlinks {
+    inset: 0 0 0 30%;
+    position: fixed;
+    z-index: 1000;
+    background: hsl(0 0% 0%/0.5);
+    backdrop-filter: blur(0.5em);
+    height: 2000px;
+    padding-top: 100px;
+    padding-left: 30px;
+  }
+  .navlinks li {
+    padding-bottom: 50px;
+  }
+  .navlinks {
+    display: none;
+  }
+
+  .navlinks ul li a:hover {
+    background-color: white;
+    color: #2c2640;
+  }
+  .nav-btn {
+    display: flex;
+    position: absolute;
+    z-index: 9999;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 10px;
+    right: 30px;
+    background: url(imgs/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    border: 0;
+  }
+  .random {
+    display: inline-block;
+  }
+  .presentation {
+    padding: 0;
+  }
+  .sorting-table-div {
+    padding: 0;
+  }
+  project-discription {
+    padding-right: 20px;
+  }
+  .sorting-table {
+    min-width: 0;
+  }
+}
