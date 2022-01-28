@@ -21,6 +21,17 @@ html {
   padding-left: 10px;
   padding-right: 10px;
 }
+
+.front-projects {
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 30px;
+  padding-left: 20px;
+}
+.prjctImg {
+  max-height: 500px;
+}
 h1 {
   text-align: center;
   font-size: 2.5rem;
@@ -67,6 +78,17 @@ header {
   color: #2e4561;
   background-color: white;
 }
+.link {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #163174;
+}
+.btnlink {
+  border: 1px solid blue;
+  padding-left: 40px;
+  padding-right: 40px;
+}
 .intro {
   background: url(imgs/intro-background.jpg);
   background-size: cover;
@@ -100,6 +122,8 @@ header {
   color: #4f7280;
 }
 #Monparcours {
+  padding-right: 20px;
+  padding-left: 20px;
   display: grid;
   grid-template-rows: auto auto;
   gap: 30px;
@@ -156,11 +180,12 @@ header {
   font-weight: bold;
 }
 .MCT {
-  text-align: center;
+  display: grid;
+  justify-content: center;
 }
 
 .MCT ul {
-  padding-left: 500px;
+  text-align: center;
 }
 
 .MCT li {
@@ -342,6 +367,50 @@ iframe {
   position: relative;
   top: 1px;
 }
+.pc-btn {
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color: #7892c2;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 10px 8px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.pc-btn:hover {
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color: #476e9e;
+}
+.pc-btn:active {
+  position: relative;
+  top: 1px;
+}
+.ruta-btn {
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color: #7892c2;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.ruta-btn:hover {
+  background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color: #476e9e;
+}
+.ruta-btn:active {
+  position: relative;
+  top: 1px;
+}
 @media screen and (max-width: 830px) {
   * {
     margin: 0;
@@ -414,5 +483,12 @@ iframe {
   }
   .sorting-table {
     min-width: 0;
+  }
+  #Mesprojets {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .prjctImg {
+    max-width: 300px;
   }
 }
