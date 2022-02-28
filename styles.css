@@ -23,13 +23,12 @@ html {
 }
 
 .front-projects {
-  padding: 20px;
   display: grid;
   grid-template-rows: auto auto;
   gap: 30px;
-  padding-left: 20px;
 }
 .prjctImg {
+  max-width: 500px;
   max-height: 500px;
 }
 h1 {
@@ -49,6 +48,9 @@ p {
 }
 .nav-btn {
   display: none;
+}
+.plc-projects {
+  margin-bottom: 20px;
 }
 
 header {
@@ -164,7 +166,7 @@ header {
 }
 .row2 {
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto;
   gap: 30px;
 }
 .card {
@@ -484,10 +486,7 @@ iframe {
   .sorting-table {
     min-width: 0;
   }
-  #Mesprojets {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
+
   .prjctImg {
     max-width: 300px;
   }
